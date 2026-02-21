@@ -293,15 +293,23 @@ body {
 }
 
 .itinerary-list li {
-    padding: 14px 0;
+    padding: 8px 0;
     border-bottom: 1px solid var(--blush-white);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
 }
 
 .itinerary-list li:last-child {
     border-bottom: none;
+}
+
+.itinerary-divider {
+    text-align: center;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #888;
+    font-size: 1rem;
 }
 
 .time {
@@ -409,7 +417,7 @@ body {
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px;
-        padding: 16px 0;
+        padding: 10px 0;
     }
     
     .time {
