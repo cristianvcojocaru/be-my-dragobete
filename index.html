@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Dragobete?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing View -->
+    <div id="landing-view" class="view active">
+        <div class="container">
+            <h1 class="headline">Will you be my Dragobete?</h1>
+            <!-- Asset placeholder: Replace with your asking GIF at assets/asking.gif -->
+            <img src="assets/asking.gif" alt="Asking animation" class="media-asset" onerror="this.style.display='none'">
+            <div class="button-group">
+                <button id="yes-btn" class="btn btn-primary">Yes!</button>
+                <button id="no-btn" class="btn btn-secondary">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rejection Stage 1 -->
+    <div id="rejection-stage-1" class="view">
+        <div class="container">
+            <h2 class="headline">Really!?<br>Did your finger slip?<br>The YES button is right bellow!</h2>
+            <div class="button-group">
+                <button id="yes-btn-1" class="btn btn-primary">Yeah, definitely YES!</button>
+                <button id="still-no-btn" class="btn btn-secondary">Still no</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rejection Stage 2 -->
+    <div id="rejection-stage-2" class="view">
+        <div class="container">
+            <div class="promise-content">
+                <h2 class="promise-title">What if I promise:</h2>
+                <ul class="promise-list">
+                    <li>To cook dinner every night</li>
+                    <li>To always wait for you on the slopes</li>
+                    <li>To always choose where to eat</li>
+                </ul>
+                <p class="promise-plea">Pretty please?</p>
+            </div>
+            <div class="button-group">
+                <button id="yes-btn-2" class="btn btn-primary">That sounds nice, YES</button>
+                <button id="final-no-btn" class="btn btn-secondary">No means no</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sad View -->
+    <div id="sad-view" class="view">
+        <div class="container">
+            <img src="assets/sad.gif" alt="Sad animation" class="media-asset" onerror="this.style.display='none'">
+            <h2 class="headline">I respect your choice...<br>But my heart had to try.</h2>
+            <button id="kidding-yes-btn" class="btn btn-tertiary">Pushing my luck here. Maybe YES?</button>
+            <button id="final-goodbye-btn" class="btn btn-tiny">No</button>
+        </div>
+    </div>
+
+    <!-- Final Goodbye View -->
+    <div id="goodbye-view" class="view">
+        <div class="container">
+            <h2 class="headline">Alright, I understand.<br>I'll be here if you ever want to talk</h2>
+        </div>
+    </div>
+
+    <!-- Success View -->
+    <div id="success-view" class="view">
+        <div class="container">
+            <img src="assets/success_photo.jpg" alt="Success celebration" class="media-asset success-photo" onerror="this.style.display='none'">
+            <h1 class="headline headline-success">No way! You said yes?!<br>This is amazing!</h1>
+            <div class="itinerary">
+                <h3 class="itinerary-title">The Dragobete Adventure</h3>
+                <ul class="itinerary-list">
+                    <li>
+                        <span class="time">18:00</span>
+                        <span class="detail">I'll pick you up from work</span>
+                    </li>
+                    <li>
+                        <span class="time">19:30</span>
+                        <span class="detail">Homemade Carbonara dinner with a curated AquaFlavour pairing experience</span>
+                    </li>
+                    <li>
+                        <span class="time">19:45</span>
+                        <span class="detail">Cozy movie night - we'll choose something together</span>
+                    </li>
+                    <li>
+                        <span class="time">21:30</span>
+                        <span class="detail">Dessert?</span>
+                    </li>
+                    <li>
+                        <span class="time">Next Day</span>
+                        <span class="detail">Ski Trip @ Sinaia</span>
+                    </li>
+                </ul>
+                <div class="itinerary-divider">— OR —</div>
+                <ul class="itinerary-list">
+                    <li>
+                        <span class="time">18:30</span>
+                        <span class="detail">Dinner @ Balls</span>
+                    </li>
+                    <li>
+                        <span class="time">20:30</span>
+                        <span class="detail">Dessert @ home?</span>
+                    </li>
+                    <li>
+                        <span class="time">Next Day</span>
+                        <span class="detail">Ski Trip @ Sinaia</span>
+                    </li>
+                </ul>
+            </div>
+            <p class="confirmation-text">Send me a message or give me a call to confirm!</p>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
