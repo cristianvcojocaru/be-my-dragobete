@@ -117,7 +117,7 @@ function startConfetti() {
     
     // Confetti configuration
     const particles = [];
-    const particleCount = 50;
+    const particleCount = 80;
     const colors = ['#FEC5BB', '#DED6CE', '#E5989B', '#F5EBE0', '#B5838D'];
     
     // Initialize particles
@@ -128,7 +128,7 @@ function startConfetti() {
             vx: (Math.random() - 0.5) * 1,
             vy: Math.random() * 1.5 + 0.5,
             color: colors[Math.floor(Math.random() * colors.length)],
-            size: Math.random() * 2 + 1,
+            size: Math.random() * 6 + 4,
             angle: Math.random() * 360,
             rotation: (Math.random() - 0.5) * 0.02,
             opacity: 1
